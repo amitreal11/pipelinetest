@@ -2,4 +2,4 @@
 
 cd /home/ubuntu/pipelinetest
 
-sudo npm install
+#sudo npm install
