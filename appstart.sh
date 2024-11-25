@@ -1,7 +1,7 @@
 #! /bin/bash
  #npm start /home/ubuntu/node/server/server.js
 
-cd /home/ubuntu/predictionAdminNode
+cd /home/ubuntu/pipelinetest
 
-pm2 restart predictionAdminNode
+pm2 restart pipelinetest
 

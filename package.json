@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Amityadavv/predictionAdminNode.git"
+    "url": "git+https://github.com/Amityadavv/pipelinetest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Amityadavv/predictionAdminNode/issues"
+    "url": "https://github.com/Amityadavv/pipelinetest/issues"
   },
-  "homepage": "https://github.com/Amityadavv/predictionAdminNode#readme",
+  "homepage": "https://github.com/Amityadavv/pipelinetest#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
