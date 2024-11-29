@@ -9,7 +9,9 @@ AfterInstall:
     timeout: 300
     runas: root
 ApplicationStart:
-  - location: scripts/appstart.sh
-    timeout: 300
-    runas: root
-    
+ # - location: scripts/appstart.sh
+  #  timeout: 300
+   # runas: root
+  location: scripts/pm2-start.sh
+      timeout: 300
+      runas: ubuntu    
