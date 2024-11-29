@@ -3,5 +3,5 @@
 
 cd /home/ubuntu/pipelinetest
 
-pm2 restart test
+pm2 restart 0
 
