@@ -10,7 +10,7 @@ import cors from 'cors'
 dotenv.config()
 const app = express()
 
-//========> pm2 restart test  <=========
+//========> pm2 restart test1  <=========
 
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))

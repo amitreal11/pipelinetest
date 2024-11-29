@@ -7,11 +7,9 @@ hooks:
 AfterInstall:
   - location: scripts/installpkgs.sh
     timeout: 300
-    runas: root
+    runas: ubuntu
 ApplicationStart:
- # - location: scripts/appstart.sh
-  #  timeout: 300
-   # runas: root
-  location: scripts/pm2-start.sh
-      timeout: 300
-      runas: ubuntu    
+  - location: scripts/appstart.sh
+    timeout: 300
+    runas: ubuntu
+   
