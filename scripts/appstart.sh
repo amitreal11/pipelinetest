@@ -1,7 +1,7 @@
 !/bin/bash
  #npm start /home/ubuntu/node/server/server.js
 
-cd /home/ubuntu/pipelinetest
+cd /home/ubuntu/pipelinetest/scripts
 
 pm2 restart 0
 
