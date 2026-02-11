@@ -1,0 +1,19 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: Deploy-to-cicd-test-MIG
+  entrypoint: /bin/bash
+  args:
+    - -c
+    - |
+      set -e
+
+      echo "Uploading code to GCS bucket..."
+      gsutil -m rsync -r . gs://crikfun-stage/pipelinetest/
+
+      echo "Starting rolling restart of MIG..."
+      gcloud compute instance-groups managed rolling-action restart cicd-test \
+        --region=asia-south1 \
+        --max-unavailable=1
+
+      echo "Deployment triggered successfully."
+
