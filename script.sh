@@ -1,14 +1,11 @@
 #!/bin/bash
+set -e
 
-# Your GitHub username
-username="amitreal11"
+echo "Deploying code from GCS to server..."
 
-# Your personal access token
-token="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"
+gsutil -m rsync -r gs://crikfun-stage/pipelinetest/ /home/ubuntu/pipelinetest/
 
-# Change to the directory where the repository is cloned
-#cd /path/to/your/repo || exit
-branch=$(git rev-parse --abbrev-ref HEAD)
-# Perform Git pull with authentication using the token
-git pull "https://$username:$token@github.com/amitreal11/pipelinetest
-" "$branch"
+echo "Fixing permissions..."
+sudo chown -R ubuntu:ubuntu /home/ubuntu/pipelinetest/
+
+echo "Code deployed successfully (no restart)"
