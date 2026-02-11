@@ -13,7 +13,10 @@ steps:
       echo "Starting rolling restart of MIG..."
       gcloud compute instance-groups managed rolling-action restart cicd-test \
         --region=asia-south1 \
-        --max-unavailable=1
+        --max-unavailable=3
 
       echo "Deployment triggered successfully."
+
+options:
+  logging: CLOUD_LOGGING_ONLY
 
