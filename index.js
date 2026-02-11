@@ -39,3 +39,6 @@ app.use(errorMiddle)
 app.listen(process.env.SERVER_PORT,()=>{
     console.log(`By script app listening at PORT=${process.env.SERVER_PORT}`)
 })
+
+
+// finally usccessfully deploy MIG pipeline
